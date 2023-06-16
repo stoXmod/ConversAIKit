@@ -1,0 +1,14 @@
+{
+  "name": "conversaikit",
+  "version": "1.0.0",
+  "description": "A toolkit for AI based conversations",
+  "main": "/dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.1.3"
+  }
+}
