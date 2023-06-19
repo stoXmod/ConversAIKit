@@ -1,14 +1,23 @@
 {
   "name": "conversaikit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A toolkit for AI based conversations",
-  "main": "/dist/index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc --outDir dist/"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/pdf-parse": "^1.1.1",
     "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "@pinecone-database/pinecone": "^0.1.6",
+    "conversaikit": "^1.0.0",
+    "langchain": "^0.0.75",
+    "mongoose": "^7.3.0",
+    "pdf-parse": "^1.1.1"
   }
 }
