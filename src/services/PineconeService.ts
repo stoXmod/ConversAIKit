@@ -4,7 +4,6 @@ import { DirectoryLoader } from "langchain/document_loaders/fs/directory";
 import { CustomPDFLoader } from "../utils/customPDFLoader";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 import { PineconeStore } from "langchain/vectorstores/pinecone";
-import * as fs from "fs";
 
 export type Metadata = {
   url: string;
@@ -82,18 +81,11 @@ export class PineconeService {
   };
 
   // ingest data into pinecone
-  public async ingestData(folderName: string): Promise<void> {
+  public async ingestData(folderPath: string): Promise<void> {
     this.ensureInitialized();
 
     try {
-      if (!fs.existsSync(`/${folderName}`)) {
-        console.log(
-          "Folder not found for ingestion. Please create a folder you want to ingest and try again."
-        );
-        return;
-      }
-
-      const directoryLoader = new DirectoryLoader(folderName, {
+      const directoryLoader = new DirectoryLoader(folderPath, {
         ".pdf": (path) => new CustomPDFLoader(path),
       });
 
