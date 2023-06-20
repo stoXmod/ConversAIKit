@@ -4,6 +4,7 @@ src/
 examples/
 .env
 .git/
+.idea
 .gitignore
 .gitattributes
 *.log

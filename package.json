@@ -1,21 +1,43 @@
 {
   "name": "conversaikit",
-  "version": "1.0.2",
+  "version": "1.0.3",
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:stoXmod/ConversAIKit.git"
+  },
   "description": "A toolkit for AI based conversations",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc --outDir dist/"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "openai",
+    "gpt-3",
+    "llm",
+    "ai",
+    "chain",
+    "prompt",
+    "prompt engineering",
+    "chatgpt",
+    "machine learning",
+    "ml",
+    "openai",
+    "embeddings",
+    "vectorstores"
+  ],
+  "author": "stoXmod",
+  "license": "MIT",
   "devDependencies": {
     "@types/pdf-parse": "^1.1.1",
     "typescript": "^5.1.3"
   },
   "dependencies": {
     "@pinecone-database/pinecone": "^0.1.6",
-    "conversaikit": "^1.0.0",
+    "conversaikit": "^1.0.2",
     "langchain": "^0.0.75",
     "mongoose": "^7.3.0",
     "pdf-parse": "^1.1.1"
