@@ -1,4 +1,4 @@
-# ConversAI
+# ConversAIKit
 
 ConversAI is a TypeScript-based framework designed to handle conversations in your applications effectively and
 efficiently. It provides integration with Langchain, Pinecone, and Ably to bring the power of conversational AI into
