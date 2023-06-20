@@ -98,8 +98,6 @@ export class PineconeService {
       });
 
       const docs = await textSplitter.splitDocuments(rawDocs);
-      console.log("split docs", docs);
-
       console.log("creating vector store...");
       /*create and store the embeddings in the vectorStore*/
       const embeddings = new OpenAIEmbeddings({
