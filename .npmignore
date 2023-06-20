@@ -1,0 +1,13 @@
+node_modules/
+coverage/
+src/
+examples/
+.env
+.git/
+.idea
+.gitignore
+.gitattributes
+*.log
+package-lock.json
+*.md
+!README.md
