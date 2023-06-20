@@ -23,7 +23,6 @@ export class PineconeService {
   public async init(): Promise<void> {
     if (!this.client) {
       this.client = new PineconeClient();
-
       await this.client.init({
         environment: this.environment,
         apiKey: this.apiKey,
@@ -37,7 +36,6 @@ export class PineconeService {
   }
 
   public async getMatchesFromEmbeddings(
-    indexName: string,
     embeddings: any[],
     topK: number
   ): Promise<ScoredVector[]> {
