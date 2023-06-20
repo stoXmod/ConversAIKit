@@ -41,7 +41,7 @@ export class PineconeService {
   ): Promise<ScoredVector[]> {
     this.ensureInitialized();
 
-    const index = this.client!.Index(indexName);
+    const index = this.client!.Index(this.indexName);
     const queryRequest = {
       vector: embeddings,
       topK,
