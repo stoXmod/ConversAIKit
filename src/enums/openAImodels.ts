@@ -22,5 +22,5 @@ export enum OpenAImodels {
   Gpt4_0613 = "gpt-4-0613",
   Gpt4_32k = "gpt-4-32k",
   Gpt4_32k_0613 = "gpt-4-32k-0613",
-  Text_embedding_ada_003 = "text-embedding-ada-003",
+  Text_embedding_ada_002 = "text-embedding-ada-002",
 }
